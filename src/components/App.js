@@ -58,7 +58,7 @@ function App()
 		div.setAttribute("classname","list");
 	
 		const input  = document.createElement("input");
-		input.setAttribute("id","taskArea");
+		input.setAttribute("id","task");
 		input.value = task;
 		input.disabled = true;
 		input.style.marginRight = "30px";
