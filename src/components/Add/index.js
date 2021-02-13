@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 const Add = ({task,setTask}) => {
 
 const  handleClick = (event) =>{
-    console.log(event.target.value);
+    // console.log(event.target.value);
    setTask(event.target.value);
 }
 

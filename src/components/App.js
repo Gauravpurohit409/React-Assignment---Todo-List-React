@@ -61,18 +61,18 @@ function App()
 		input.disabled = true;
 		input.style.marginRight = "30px";
 		input.style.marginLeft ="20px";
-		input.setAttribute("classname","list");
+		input.setAttribute("class","list");
 		div.appendChild(input);
 
 		const editBtn = document.createElement("button");
-		editBtn.setAttribute("classname","edit");
+		editBtn.setAttribute("class","edit");
 		editBtn.innerHTML = "Edit";
 		editBtn.style.marginLeft = "20px";
 		editBtn.addEventListener("click",edit);
 		div.appendChild(editBtn);
 
 		const delBtn = document.createElement("button");
-		delBtn.setAttribute("classname","delete");
+		delBtn.setAttribute("class","delete");
 		delBtn.innerHTML = "Delete";
 		delBtn.style.marginLeft = "20px";
 		delBtn.addEventListener("click",deleteTask);
