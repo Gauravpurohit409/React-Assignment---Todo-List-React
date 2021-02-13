@@ -55,14 +55,13 @@ function App()
 	
 		const divRoot = document.getElementById("root");
 		const div = document.createElement("div");
-		div.setAttribute("classname","list");
-	
+		
 		const input  = document.createElement("input");
-		input.setAttribute("id","task");
 		input.value = task;
 		input.disabled = true;
 		input.style.marginRight = "30px";
 		input.style.marginLeft ="20px";
+		input.setAttribute("classname","list");
 		div.appendChild(input);
 
 		const editBtn = document.createElement("button");
