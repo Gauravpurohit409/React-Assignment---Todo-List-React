@@ -31,12 +31,12 @@ const TodoListItems = (props) => {
         <li className = "list">
             {props.todo.isEditing ? 
                 <>
-                <textarea onChange = {changeTodoValue}  defaultValue = {TodoValue}></textarea>
-                <button onClick = {finishEditing}>Update Task</button>
+                <textarea className ="editTask" onChange = {changeTodoValue}  defaultValue = {TodoValue}></textarea>
+                <button className ="saveTask"  onClick = {finishEditing}>Update Task</button>
                 </>
             :
                 <>
-                {props.todo.isEditing}{props.todo.value} (<a href="#" onClick = {startEditing}>Edit</a> | <a href="#" onClick = {deleteTask}>Delete</a> )
+                {props.todo.isEditing}{props.todo.value} (<a href="#" class= "edit" onClick = {startEditing}>Edit</a> | <a href="#" class="delete" onClick = {deleteTask}>Delete</a> )
                 </>  
 
             }
