@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./../styles/App.css";
 import Add from "./Add";
+import TodoContainer from "./TodoContainer/index.";
 
 function App() 
 {
@@ -79,16 +80,16 @@ function App()
 		div.appendChild(delBtn);
 
 		divRoot.appendChild(div);
-
 		setTask("");
 	}
+	// <h1> Todo List </h1>
+	// 	<Add task = {task} setTask = {setTask} />
+	// 	<Button id= "btn" variant="secondary" onClick = {addInRoot}>Add</Button>
+       
    return (
 	<div id="main">
 		<>
-		<h1> Todo List </h1>
-		<Add task = {task} setTask = {setTask} />
-		<Button id= "btn" variant="secondary" onClick = {addInRoot}>Add</Button>
-       
+		<TodoContainer/>		
 		</>
 	</div>
 	);
